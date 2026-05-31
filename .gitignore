@@ -1,0 +1,26 @@
+# Blindagem — NUNCA versionar credenciais
+.credentials.json
+*credential*
+*.key
+*.pem
+.env
+
+# Gerados pelo Claude Code (regeneram sozinhos, não migram)
+cache/
+sessions/
+session-env/
+shell-snapshots/
+file-history/
+paste-cache/
+ide/
+plugins/
+backups/
+history.jsonl
+stats-cache.json
+.last-cleanup
+.last-update-result.json
+skills-lock.json
+
+# Lixo de SO
+.DS_Store
+Thumbs.db

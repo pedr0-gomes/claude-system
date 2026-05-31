@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "opus",
+  "enabledPlugins": {
+    "github@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true
+  },
+  "autoUpdatesChannel": "latest",
+  "autoMemoryEnabled": true,
+  "skipAutoPermissionPrompt": true
+}
