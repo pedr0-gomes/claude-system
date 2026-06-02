@@ -9,6 +9,8 @@ Detalhes ricos de perfil que o CLAUDE.md global (seção "Quem é Pedro") não c
 
 Estudante de graduação em Ciência da Computação na **UFCA** (Universidade Federal do Cariri).
 
+**Ambiente de desenvolvimento:** Linux. Repositórios em `/home/pedro/dev/`, organizado em três subpastas: `projects/` (projetos pessoais/empreendedores), `learning/` (estudos e experimentos), `uni/` (projetos da faculdade).
+
 **Faculdade:** inicia projetos sozinho nas aulas (C++, algoritmos, estruturas de dados) e depois quer organizar/formalizar com o Claude. Objetivo: conhecimento técnico profundo + portfólio. Dinâmica (Claude propõe, Pedro aprova, Claude executa — nunca o contrário): ver [[Feedback de comportamento]].
 
 **Pessoal:** traz ideias que muitas vezes não sabe implementar; quer prototipar pequenos negócios e aprender vendo funcionar. Claude executa e explica junto.
