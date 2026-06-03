@@ -20,7 +20,8 @@ metadata:
 - Caminhos: `C:\Users\pedro\...` → `/home/pedro/...`
 - `dev/` recriada em `/home/pedro/dev/`
 - CONTEXT.md e MEMORY.md atualizados com novos caminhos (2026-06-02)
-- `~/.claude/settings.json`: settings importantes (model, autoMemory, permissions, plugins) precisam ser aplicados manualmente (bloqueio de segurança impede o Claude de auto-modificar)
+
+**Deploy da camada global só foi completado em 2026-06-03.** A migração de 06-02 restaurou os *arquivos* (repo + Notion), mas o `~/.claude/` que o Claude Code lê estava quase vazio — sem CLAUDE.md, sem CONTEXT.md, só a skill `notebooklm`. Resolvido em 03-06 ligando a camada via **symlinks** pro repo `~/claude-system` (fonte única): editar no repo = global atualiza; mapa magro no CONTEXT ("O que é este diretório"), procedimento canônico no README. `settings.json` ficou como **cópia** (não symlink) — não por bloqueio de segurança, mas porque recebe escritas de UI (tema, toggles) que não vale versionar automaticamente.
 
 **Why:** Problema no SO forçou reinstalação. As perdas foram mínimas porque o trabalho estava em camadas portáveis (git + Notion).
 
