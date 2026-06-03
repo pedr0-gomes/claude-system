@@ -13,46 +13,77 @@ Conteúdo:
 
 ---
 
+## Como funciona: symlink, fonte única
+
+O repo mora em `~/claude-system` e é a **única fonte de verdade**. O `~/.claude/`
+(onde o Claude Code lê de fato) não guarda cópias — ele **aponta** pro repo via
+symlinks. Consequências:
+
+- **Editar no repo = global atualiza sozinho.** Sem copiar de volta.
+- **Versionar = `git commit` no repo.** O que está ativo já é o que está versionado.
+- Sem drift: não existem "duas versões" pra sincronizar à mão.
+
+**Exceção: `settings.json` é cópia, não symlink.** O Claude Code escreve nele
+(tema, toggles de UI) e pode ter campos específicos da máquina — não vale
+versionar essas escritas automaticamente.
+
+---
+
 ## Instalar numa máquina nova (Linux)
 
 **Pré-requisito:** Claude Code já instalado e logado (`claude` funciona, login feito).
 > ⚠️ Não copie `.credentials.json` de outra máquina. O login da máquina nova já gerou a credencial dela.
 
-### 1. Clonar o repo (fora do ~/.claude, em staging)
+### 1. Clonar o repo (local permanente — não é staging)
 
 ```bash
 git clone <URL_DO_REPO> ~/claude-system
 cd ~/claude-system
 ```
 
-### 2. Copiar a camada curada pro ~/.claude
+### 2. Linkar a camada curada pro ~/.claude (symlinks)
 
 ```bash
+REPO=~/claude-system
 mkdir -p ~/.claude/skills ~/.claude/commands
-cp CLAUDE.md CONTEXT.md settings.json ~/.claude/
-cp -r skills/.    ~/.claude/skills/
-cp -r commands/.  ~/.claude/commands/
+
+# leis + mapa
+ln -sfn "$REPO/CLAUDE.md"  ~/.claude/CLAUDE.md
+ln -sfn "$REPO/CONTEXT.md" ~/.claude/CONTEXT.md
+
+# skills e commands: um symlink por item (não a pasta inteira — assim
+# uma skill instalada direto no global no futuro não é destruída)
+for s in "$REPO"/skills/*;   do ln -sfn "$s" ~/.claude/skills/$(basename "$s");   done
+for c in "$REPO"/commands/*; do ln -sfn "$c" ~/.claude/commands/$(basename "$c"); done
+
+# settings.json: COPIAR (exceção — ver "Como funciona")
+cp "$REPO/settings.json" ~/.claude/settings.json
 ```
 
 Isso não toca em `~/.claude/.credentials.json` nem em nada gerado.
 
-### 3. Restaurar as memórias (passo técnico)
+### 3. Linkar as memórias (passo técnico — atenção ao slug)
 
-O Claude Code guarda memória em `~/.claude/projects/<SLUG>/memory/`, onde `<SLUG>` é
-o caminho de trabalho com `/`, `.` etc. trocados por `-`. O slug **muda** de máquina
-pra máquina, então não dá pra chutar — melhor deixar o Claude criar a pasta e copiar pra ela:
+O Claude Code lê memória de `~/.claude/projects/<SLUG>/memory/`, onde `<SLUG>` é
+o **caminho de trabalho** (cwd de onde você abre o `claude`) com `/`, `.` etc.
+trocados por `-`. O slug muda conforme o diretório, então a memória só carrega
+quando você abre o Claude **daquele** diretório.
 
 ```bash
-# a) Rode o claude UMA vez a partir de ~/.claude pra ele criar a pasta do projeto:
-cd ~/.claude && claude   # abra e feche (ex.: digite /exit)
+# a) Rode o claude UMA vez a partir de ~/claude-system pra ele criar a pasta do projeto:
+cd ~/claude-system && claude   # abra e feche (ex.: digite /exit)
 
 # b) Descubra o slug que ele criou:
 ls ~/.claude/projects/
 
-# c) Copie as memórias pra dentro dele (troque <SLUG> pelo que apareceu):
-mkdir -p ~/.claude/projects/<SLUG>/memory
-cp ~/claude-system/memory/. ~/.claude/projects/<SLUG>/memory/ -r
+# c) Troque a pasta memory criada por um symlink pro repo (troque <SLUG>):
+SLUG=<SLUG>
+rmdir ~/.claude/projects/$SLUG/memory 2>/dev/null
+ln -sfn ~/claude-system/memory ~/.claude/projects/$SLUG/memory
 ```
+
+> Como é symlink, a memória que o Claude gravar durante as sessões cai **direto
+> no repo** — basta commitar, sem copiar de volta.
 
 ### 4. Plugins
 
@@ -62,7 +93,7 @@ Se não aparecerem, re-adicione o marketplace e instale pelo `/plugin` dentro do
 ### 5. Verificar
 
 ```bash
-cd ~/.claude && claude
+cd ~/claude-system && claude
 ```
 - `/` deve listar as skills (consolidar-pesquisa, destilar-projeto, etc.)
 - Peça pra ele recapitular uma memória (ex.: "quem é Pedro?") — confirma que `memory/` carregou.
@@ -70,13 +101,25 @@ cd ~/.claude && claude
 
 ---
 
-## Atualizar o repo a partir de uma máquina (no futuro)
+## Atualizar o repo (no dia a dia)
 
-Quando mudar skills/leis/memórias, copie de volta pro repo e commit:
+Como o global é symlink pro repo, **editar leis/mapa/skills/memórias já edita o
+repo** — só falta commitar:
+
 ```bash
 cd ~/claude-system
-cp ~/.claude/CLAUDE.md ~/.claude/CONTEXT.md ~/.claude/settings.json .
-cp -r ~/.claude/skills/. skills/
-cp -r ~/.claude/projects/<SLUG>/memory/. memory/
-git add -A && git commit -m "sync" && git push
+git add -A && git commit -m "..." && git push
+```
+
+**Única exceção — coisas instaladas direto no global** (uma skill via `npx skills`,
+ou mudanças no `settings.json`, que é cópia). Elas vivem fora do repo até você
+puxá-las pra dentro:
+
+```bash
+# skill nova instalada em ~/.claude/skills/<nome>: mover pro repo e re-linkar
+mv ~/.claude/skills/<nome> ~/claude-system/skills/<nome>
+ln -sfn ~/claude-system/skills/<nome> ~/.claude/skills/<nome>
+
+# settings.json: copiar a versão ativa pro repo quando mudar algo que vale versionar
+cp ~/.claude/settings.json ~/claude-system/settings.json
 ```
