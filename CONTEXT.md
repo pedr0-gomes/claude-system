@@ -1,6 +1,6 @@
 # CONTEXT.md — .claude/ (sistema de orquestração)
 
-Última atualização: 2026-06-03
+Última atualização: 2026-06-05
 
 ## O que é este diretório
 
@@ -100,3 +100,4 @@ As skills são a implementação dos blocos do método (ver acima). Um bloco com
 Página raiz: [Sistema de gestão](https://www.notion.so/36eab645e3bb8160969adc118f4bf38d) · database [Construções](https://www.notion.so/0fc713f696674fe3ace03860d22231b3).
 
 - **[Mapeamento bagunçado de ideias de negócio](https://www.notion.so/36eab645e3bb81c7bd18c48860e01b06)** — rascunho. Próxima sessão: brainstorm livre.
+- **[first-real-project — relatórios de frequência](https://www.notion.so/376ab645e3bb81f6935fd72700848367)** — ativo. Produto web, primeiro end-to-end do Pedro. Esteira Construir: PRD ✓, próxima `/to-issues`. Repo em `~/dev/projects/first-real-project`.
