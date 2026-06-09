@@ -3,7 +3,8 @@ name: consolidar-pesquisa
 description: Consolida o resultado bruto de uma pesquisa externa (ex: Deep
   Research) num research.md estruturado — a segunda metade do bloco
   Investigar. Pedro cola o briefing (saída da skill investigar) e o dump bruto;
-  a skill reorganiza fielmente nas cinco seções e salva em .claude/research/.
+  a skill reorganiza fielmente nas cinco seções e salva no diretório de
+  pesquisa do projeto.
   Use quando Pedro volta com o resultado de uma pesquisa externa e quer
   transformá-lo no artefato research.md que alimenta os blocos Aprender e
   Construir. NÃO é pra formular o que pesquisar (isso é a skill investigar) nem
@@ -21,7 +22,9 @@ decide**: ela reorganiza o que já foi pesquisado numa forma navegável.
 
 - **Consome:** o briefing (saída da `investigar` — Tema / Por quê / Ângulos /
   Restrições) + o dump bruto da pesquisa, ambos colados no chat.
-- **Produz:** `.claude/research/<slug>.md`, com as cinco seções abaixo.
+- **Produz:** `<dir-de-pesquisa>/<slug>.md`, com as cinco seções abaixo. O
+  `<dir-de-pesquisa>` segue a convenção do projeto (ver passo 4); default
+  `.claude/research/`.
 - **Papel:** Claude reorganiza; Pedro cura.
 
 ## A régua — o conteúdo nunca é do Claude
@@ -46,8 +49,10 @@ aqui o *conteúdo* nunca é. Mesma desconfiança, dois alvos.
    saem do dump; toda lacuna vai pra §5; §3 segue a regra de corte.
 3. **Uma rodada de corte.** Mostre o rascunho inteiro. Pedro corta e ajusta de
    uma vez — não vá seção a seção, não entreviste.
-4. **Trave e salve.** Escreva em `.claude/research/<slug>.md`; proponha o slug
-   a partir do título e confirme antes de salvar.
+4. **Trave e salve.** Descubra onde o projeto guarda pesquisa: se já existem
+   docs de pesquisa (ex.: `docs/pesquisa/`) ou o CLAUDE/CONTEXT local aponta um
+   lugar, siga-o; senão, default `.claude/research/`. Proponha o caminho e o
+   slug (a partir do título) e confirme ambos antes de salvar.
 
 ## As cinco seções
 

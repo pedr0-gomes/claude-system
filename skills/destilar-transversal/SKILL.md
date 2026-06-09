@@ -29,9 +29,9 @@ Cada fato mora em **um** lugar canônico. As camadas:
 
 | Camada | Caminho | O que mora aqui |
 |---|---|---|
-| **CLAUDE.md global** | `C:\Users\pedro\.claude\CLAUDE.md` | **Lei seca + identidade.** Regras de comportamento, princípios, comunicação — na forma imperativa, curta, sem o porquê. Quem Pedro é, em essência. |
-| **`.claude/memory/`** | `...\memory\*.md` | **Why das leis + contexto específico + perfil rico + projeto/referências.** Um fato por arquivo, com frontmatter; ponteiro no `MEMORY.md`. |
-| **CONTEXT.md global** | `C:\Users\pedro\.claude\CONTEXT.md` | **Mapa magro do sistema de orquestração.** Estado operacional, frentes abertas, blocos do método. Aponta pro Notion, não hospeda o conteúdo gordo. |
+| **CLAUDE.md global** | `~/.claude/CLAUDE.md` | **Lei seca + identidade.** Regras de comportamento, princípios, comunicação — na forma imperativa, curta, sem o porquê. Quem Pedro é, em essência. |
+| **`.claude/memory/`** | `~/.claude/memory/*.md` | **Why das leis + contexto específico + perfil rico + projeto/referências.** Um fato por arquivo, com frontmatter; ponteiro no `MEMORY.md`. |
+| **CONTEXT.md global** | `~/.claude/CONTEXT.md` | **Mapa magro do sistema de orquestração.** Estado operacional, frentes abertas, blocos do método. Aponta pro Notion, não hospeda o conteúdo gordo. |
 | **Notion** | "Sistema de gestão" + database Construções | **Canônico gordo, navegável.** Conteúdo extenso que Pedro lê e cura no Notion, não no terminal. |
 
 ## A regra de corte (núcleo)
