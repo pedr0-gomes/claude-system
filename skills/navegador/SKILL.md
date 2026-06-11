@@ -31,18 +31,27 @@ E toda sugestão **mostra o porquê**: qual artefato ou contrato disparou aquela
 escolha. Isso ensina Pedro a se auto-rotear nas próximas — o objetivo é tornar
 a skill dispensável, não criar dependência.
 
-## Carregar primeiro — sempre, os dois juntos
+## Carregar primeiro
 
-Antes da primeira pergunta, carregue **os dois lados**:
+Antes da primeira pergunta, carregue o **método** e o **estado** — o par
+load-bearing que você precisa cruzar — mais a **memória comportamental**:
 
 1. **Método** — `~/.claude/CONTEXT.md`. É o mapa que você está executando:
-   blocos, contratos `consome → produz`, esteiras internas, regra da linha 63.
+   blocos, contratos `consome → produz`, esteiras internas, regra de evolução.
    A lista de blocos/skills vem **daqui**, não de cabeça — o método evolui.
 2. **Estado** — relativo ao cwd, porque a skill roda *dentro* do projeto:
    `./CLAUDE.md` (dinâmica e stack locais), `./.claude/`, `./README.md`,
    `git log`. Degrade de boa se o projeto não tiver CLAUDE.md local.
+3. **Memória comportamental** — `~/claude-system/memory/` (perfil + feedback),
+   por **caminho absoluto, de qualquer cwd**. O auto-load da memória é
+   *per-cwd* e só dispara em `~/claude-system`; mas o navegador roda em
+   projetos variados (`~/dev/*`), onde ela ficaria muda. O essencial (leis,
+   quem é Pedro) já vem do `~/.claude/CLAUDE.md` sempre; o `memory/` adiciona
+   o enriquecimento — a estrutura `~/dev/{projects,learning,uni}` e o Why+How
+   das leis — que afina o grelho. Carregue do mesmo jeito que carrega o
+   CONTEXT: por caminho absoluto, não pelo auto-load.
 
-**Cruze os dois desde o início.** Foi a falta disso que rachou nas duas
+**Cruze método e estado desde o início.** Foi a falta disso que rachou nas duas
 rodadas na mão: a conclusão útil só apareceu ao ver que a skill mapeada pro
 estágio se anulava contra a dinâmica do projeto local. Método sem estado
 grelha no vácuo; estado sem método não sabe pra onde apontar.
