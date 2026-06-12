@@ -8,6 +8,19 @@
     "skill-creator@claude-plugins-official": true
   },
   "autoUpdatesChannel": "latest",
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/claude-system/hooks/capturar-feedback-metodo.sh",
+            "timeout": 300
+          }
+        ]
+      }
+    ]
+  },
   "autoMemoryEnabled": true,
   "skipAutoPermissionPrompt": true
 }

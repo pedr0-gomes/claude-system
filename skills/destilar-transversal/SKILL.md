@@ -1,6 +1,6 @@
 ---
 name: destilar-transversal
-description: Destila aprendizados da sessão para fora de qualquer repositório de projeto — o sistema .claude/ global (CLAUDE.md global, memory/, CONTEXT.md) e o Notion. Roteia cada fato para a camada certa sem duplicar, seguindo a regra de corte "lei seca no global, Why+How na memória, canônico gordo no Notion". Pedro cura, Claude propõe e escreve. Use quando Pedro pedir para destilar, atualizar, curar ou organizar o sistema global, a memória, as leis do CLAUDE.md global ou o Notion — ou disser "destilar-transversal". É a irmã da destilar-projeto para tudo que vive fora de um repositório.
+description: Destila aprendizados da sessão (e do inbox de captura ~/claude-system/inbox/) para fora de qualquer repositório de projeto — o sistema .claude/ global (CLAUDE.md global, memory/, CONTEXT.md) e o Notion. Roteia cada fato para a camada certa sem duplicar, seguindo a regra de corte "lei seca no global, Why+How na memória, canônico gordo no Notion". Pedro cura, Claude propõe e escreve. Use quando Pedro pedir para destilar, atualizar, curar ou organizar o sistema global, a memória, as leis do CLAUDE.md global ou o Notion — ou disser "destilar-transversal". É a irmã da destilar-projeto para tudo que vive fora de um repositório.
 ---
 
 # destilar-transversal
@@ -64,6 +64,20 @@ Os arquivos mostram o estado fixo; a sessão mostra **o que está em movimento**
 
 - **Trechos marcados.** Pedro deixa migalhas com frases naturais ("marca isso", "registra isso", "isso vale guardar"). A frase não dispara nada quando dita — é só marcador. Buscar com `Grep` (case-insensitive) e ler ~20 linhas ao redor. Sinal mais forte do que destilar.
 - **Decisões e mudanças de direção** — "fechou", "aprovo", "muda o plano", mesmo sem marcador.
+
+### 2b. Drenar o inbox
+
+Além da sessão atual, ler **`~/claude-system/inbox/*.md`** (caminho absoluto —
+funciona de qualquer cwd; ignorar o `README.md`). São **candidatos de
+feedback-de-método** que o hook do Capturar escreveu no fim de sessões rodadas
+em outros projetos — sinal que, sem o inbox, se perdia ("nada sinalizou").
+
+- Tratar cada candidato como um trecho marcado vindo de outra sessão: entra no
+  mapa do passo 3 junto com o que a sessão atual revelou.
+- O candidato é só sinal capturado — a decisão de destilar (ou recusar) segue
+  sendo de Pedro, proposta a proposta.
+- **Após Pedro decidir** (destilado ou recusado), apagar o arquivo processado.
+  O inbox é buffer, não arquivo morto.
 
 ### 3. Apresentar mapa inicial
 

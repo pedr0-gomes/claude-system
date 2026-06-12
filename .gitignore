@@ -21,6 +21,10 @@ stats-cache.json
 .last-update-result.json
 skills-lock.json
 
+# Inbox de captura (buffer transitório por-máquina; só o README é versionado)
+inbox/*
+!inbox/README.md
+
 # Lixo de SO
 .DS_Store
 Thumbs.db

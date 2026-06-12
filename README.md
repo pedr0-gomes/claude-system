@@ -10,6 +10,8 @@ Conteúdo:
 - `skills/` — skills vivas
 - `commands/` — slash commands custom
 - `memory/` — memória persistente (perfil, feedback, projetos)
+- `hooks/` — hooks do harness (Capturar: `SessionEnd` → inbox)
+- `inbox/` — buffer de candidatos capturados (conteúdo não versionado)
 
 ---
 
@@ -84,6 +86,27 @@ ln -sfn ~/claude-system/memory ~/.claude/projects/$SLUG/memory
 
 > Como é symlink, a memória que o Claude gravar durante as sessões cai **direto
 > no repo** — basta commitar, sem copiar de volta.
+
+### 3b. Ativar o hook do Capturar (captura projeto→hub)
+
+O `settings.json` do repo já traz o hook `SessionEnd` que roda
+`hooks/capturar-feedback-metodo.sh` no fim de cada sessão (em qualquer
+projeto) e deposita candidatos de feedback-de-método em `inbox/`. Como
+`settings.json` é **cópia**, numa máquina que já tem settings ativo o bloco
+`"hooks"` precisa ser **mesclado à mão** no `~/.claude/settings.json` (não
+sobrescrever — há campos por-máquina).
+
+Requisitos: `jq` instalado e `claude` no PATH do hook. Verificar:
+
+```bash
+chmod +x ~/claude-system/hooks/capturar-feedback-metodo.sh
+# abra e feche uma sessão num projeto qualquer e olhe o inbox:
+ls ~/claude-system/inbox/
+```
+
+Se o repo não estiver em `~/claude-system`, exportar `CLAUDE_SYSTEM_DIR`
+apontando pra ele. Drenagem: `/destilar-transversal` (lê o inbox e apaga o
+processado).
 
 ### 4. Plugins
 
