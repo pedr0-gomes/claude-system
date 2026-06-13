@@ -25,6 +25,9 @@ skills-lock.json
 inbox/*
 !inbox/README.md
 
+# Log de auto-teste do hook de captura (só existe com CAPTURAR_DEBUG; por-máquina)
+hooks/capturar-debug.log
+
 # Lixo de SO
 .DS_Store
 Thumbs.db
