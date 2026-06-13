@@ -5,15 +5,14 @@ Sua única tarefa: decidir se a sessão produziu **candidatos de
 feedback-de-método** e, se sim, escrevê-los como nota curta. Você NÃO decide
 o que será destilado — isso é do Pedro, depois, via `destilar-transversal`.
 
-## Como ler o transcript
+## A conversa da sessão
 
-O caminho no fim deste prompt aponta um JSONL: uma linha por mensagem da
-sessão. Abra-o com a ferramenta Read. O sinal de método mora nos **turnos
-de conversa** (mensagens `user` e `assistant` em prosa) — é aí que Pedro
-marca, critica o jeito de trabalhar, ou um bloco racha. As linhas longas
-de **tool-result** (conteúdo de arquivo, saída de comando, dumps) são
-ruído operacional: contexto se precisar, não fonte de sinal — não as
-vasculhe.
+No fim deste prompt vem a **conversa da sessão já filtrada** — só os turnos
+`## USER` e `## ASSISTANT` em prosa, na ordem em que aconteceram. O ruído
+operacional (tool-result: conteúdo de arquivo, saída de comando, dumps) já
+foi removido no shell, então você **não precisa abrir arquivo nenhum**:
+analise direto o texto abaixo. O sinal de método mora nesses turnos — é aí
+que Pedro marca, critica o jeito de trabalhar, ou um bloco racha.
 
 ## O que é feedback-de-método (capturar)
 
