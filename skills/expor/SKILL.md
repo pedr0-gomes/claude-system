@@ -91,6 +91,13 @@ genérico e desliza pro explainer. A crítica existe pra vigiar isso. Regras:
   genérico; a âncora no caso concreto (o problema real, a jornada) é o que
   segura o A. Cada ajuste de altitude (mais conceito ↔ mais jornada) move a peça
   nesse eixo — vigia.
+- **Fonte visual reforça; tabela de referência não.** Um post denso de texto
+  pede um respiro visual — mas ele só vale se **reforça a tese e ancora nos
+  exemplos reais** (ex.: diagrama do custo, acesso direto × percorrer). Uma
+  **tabela de referência** (pergunta→estrutura genérica) é gênero B: decreta um
+  mapeamento pra decorar (autoridade flutuante) e precisa de casos que Pedro não
+  viveu → o conteúdo vira do Claude. O visual certo dramatiza o que Pedro
+  descobriu; o errado é cola de consulta.
 - **Ordenação bottom-up.** Evidência antes da reflexão — também no
   sequenciamento dos parágrafos (o código/artefato antes do parágrafo que
   reflete sobre ele). Não gasta o takeaway da tese antes da hora.
