@@ -33,12 +33,14 @@ prompt_file="$repo/hooks/capturar-prompt.md"
 
 # sonnet: a qualidade da captura é o ponto frágil do desenho — não economizar
 # no julgamento; 1 chamada por fim-de-sessão. Trocar por haiku se o custo doer.
-nota=$(CAPTURAR_HEADLESS=1 claude -p \
-  --model sonnet \
-  --allowedTools "Read" \
-  "$(cat "$prompt_file")
-
-Transcrição da sessão (JSONL) a analisar: $transcript") || exit 0
+# O prompt vai por STDIN, não como argumento: nesta versão do CLI (2.1.160)
+# um prompt grande no argumento posicional não é lido por `claude -p` (erra
+# "Input must be provided..."); via stdin funciona. Como `input=$(cat)` acima
+# já drenou o stdin do hook, alimentamos o prompt por um pipe próprio — que de
+# quebra resolve a trava de "no stdin data" do `-p`.
+nota=$(printf '%s\n\nTranscrição da sessão (JSONL) a analisar: %s\n' \
+  "$(cat "$prompt_file")" "$transcript" \
+  | CAPTURAR_HEADLESS=1 claude -p --model sonnet --allowedTools "Read") || exit 0
 
 case "$nota" in ""|*SEM_CANDIDATO*) exit 0 ;; esac
 

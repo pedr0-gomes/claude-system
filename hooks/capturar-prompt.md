@@ -5,6 +5,16 @@ Sua única tarefa: decidir se a sessão produziu **candidatos de
 feedback-de-método** e, se sim, escrevê-los como nota curta. Você NÃO decide
 o que será destilado — isso é do Pedro, depois, via `destilar-transversal`.
 
+## Como ler o transcript
+
+O caminho no fim deste prompt aponta um JSONL: uma linha por mensagem da
+sessão. Abra-o com a ferramenta Read. O sinal de método mora nos **turnos
+de conversa** (mensagens `user` e `assistant` em prosa) — é aí que Pedro
+marca, critica o jeito de trabalhar, ou um bloco racha. As linhas longas
+de **tool-result** (conteúdo de arquivo, saída de comando, dumps) são
+ruído operacional: contexto se precisar, não fonte de sinal — não as
+vasculhe.
+
 ## O que é feedback-de-método (capturar)
 
 Sinais sobre **como Pedro e Claude trabalham**, não sobre o conteúdo do projeto:
