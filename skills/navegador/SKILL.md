@@ -65,8 +65,12 @@ Antes de grelhar a jogada, descubra em que camada ela vive:
 
 Ela não só calibra — ela **roteia**:
 
-- **Conteúdo** → trabalhar no código/material do projeto em si. O navegador
-  **não é a ferramenta**: devolva Pedro pro trabalho direto e saia do caminho.
+- **Conteúdo** → dois sub-casos, não confundir "é do projeto" com "é trabalho
+  do Pedro":
+  - *Conteúdo do Pedro* (o código/material que é dele de fato) → o navegador
+    **não é a ferramenta**: devolva pro trabalho direto e saia do caminho.
+  - *Cerimônia do assistente* (scaffold, build, andaime que o contrato põe na
+    mão do Claude) → **executa direto**, não devolve.
 - **Método** → meta-trabalho no próprio `.claude/` (skills, memória, CONTEXT).
   O navegador opera direto nessa camada.
 - **Fazer o conteúdo rodar pelo método** → o **caso central**: rotear os

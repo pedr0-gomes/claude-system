@@ -54,8 +54,11 @@ recontagem-grelhada peça-a-peça → nota consolidada
    não veio junto, decida aqui se recupera as fontes primárias — senão a régua
    "grelhar contra as fontes" fica frouxa (uma síntese não-auditada não é
    bitola). **Curadoria importa: uma fonte densa demais sequestra o material** e
-   enviesa o que o NotebookLM gera — equilibre o peso das fontes, não só o
-   prompt.
+   enviesa o que o NotebookLM gera. Equilibre o *peso entre* fontes — mas
+   **corte no prompt, nunca ampute a fonte.** Aparar uma fonte a priori ("só
+   as seções úteis") é aposta cega: introduz viés de confirmação e quebra
+   "grelhar contra a fonte". O corte no prompt é reversível (curadoria
+   just-in-time); a amputação da fonte não.
 
 2. **Diagnóstico do formato** — **grelhe** Pedro pra decidir qual *tipo* de
    material o NotebookLM gera agora pra esse assunto (`generate report` aceita
