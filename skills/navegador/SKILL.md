@@ -47,7 +47,7 @@ load-bearing que você precisa cruzar — mais a **memória comportamental**:
    *per-cwd* e só dispara em `~/claude-system`; mas o navegador roda em
    projetos variados (`~/dev/*`), onde ela ficaria muda. O essencial (leis,
    quem é Pedro) já vem do `~/.claude/CLAUDE.md` sempre; o `memory/` adiciona
-   o enriquecimento — a estrutura `~/dev/{projects,learning,uni}` e o Why+How
+   o enriquecimento — a estrutura `~/dev/{projects,uni}` e o Why+How
    das leis — que afina o grelho. Carregue do mesmo jeito que carrega o
    CONTEXT: por caminho absoluto, não pelo auto-load.
 

@@ -1,9 +1,10 @@
 ---
 name: aprender
-description: Conduz Pedro a entender um tema por curiosidade — sem ação ou
-  decisão por trás —, montando material com NotebookLM e fechando uma nota-sombra
+description: Conduz Pedro a entender um tema — sempre a serviço de um projeto
+  ou de uma cadeira (aprendizado situado, nunca curiosidade solta) —, montando
+  material com NotebookLM e fechando uma nota-sombra
   inspecionável pela recontagem dele nas próprias palavras, grelhada contra as
-  fontes. Recebe o redirect do investigar quando a intenção é curiosidade pura.
+  fontes. Recebe o redirect do investigar quando a intenção é entender/ganhar capacidade (não decidir).
   Use quando Pedro disser "quero entender X", "aprender X", "explica X a fundo",
   ou trouxer um research.md pra estudar. NÃO é pra pesquisar algo pra agir ou
   decidir — isso é o bloco Investigar.
@@ -15,6 +16,13 @@ Pega uma dúvida just-in-time ou um `research.md` (do Investigar) e conduz Pedro
 a entender o tema de verdade — não a *sentir* que entendeu. A skill **não
 ensina despejando**: ela monta o material com a ferramenta externa e faz Pedro
 produzir a evidência de que aprendeu.
+
+O Aprender é **sempre situado** *(decidido 2026-06-19)*: só roda a serviço de
+um projeto (`~/dev/projects`) ou de uma cadeira (`~/dev/uni`). Curiosidade
+solta, sem mestre, **não é movimento legítimo** — todo aprendizado do Pedro é
+*by doing*, sob demanda. A fronteira com o Investigar é **entender-vs-decidir**
+(Aprender ganha capacidade; Investigar pesquisa pra decidir), não mais
+curiosidade-vs-ação.
 
 O Aprender é um **bloco-sink**: o output real é intangível — capacidade interna.
 Por isso precisa deixar uma **sombra inspecionável** (a nota). Sem ela, não se
