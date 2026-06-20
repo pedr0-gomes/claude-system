@@ -14,3 +14,5 @@ Regras-núcleo: fale da **vida e do comportamento passado** da pessoa, nunca da 
 **Why:** é a régua que separa *descoberta* (não se vende) de *venda*, e o filtro de **sinal vs. gentileza** na validação primária ativa — o ponto mais perigoso desse território (colher cobertura ≠ entender a dor; sentir-se validado ≠ validar). Liga-se à frente aberta "Validação primária ativa não tem bloco" no CONTEXT global.
 
 **How to apply:** ao desenhar abordagem/entrevista/recon de validação **ou** ao ler as respostas que voltam — grelhar elogio vs. dor real, exigir comportamento concreto, tratar silêncio/hipotético como não-dor. Ver [[user_profile]] pro contexto solo-founder do Pedro.
+
+Dois sinais de não-mercado que silêncio/hipotético não capturam: **workaround grátis entranhado** (a dor já tem gambiarra zero-custo que a dissolve — cobrar adiantado mata "inadimplência") e **commoditização por IA** ("monta sozinho com chatgpt") — ambos matam o wedge mesmo quando a dor é *falada*. Validados no campo no health-tech-discovery (06-20).
