@@ -9,3 +9,4 @@ Sistema de orquestração, fluxo de aprendizado, skills vivas, frentes abertas e
 - [Migração de computador](project_computer_migration.md) — Windows → Linux (2026-06-02); camada global ligada via symlink pro repo em 2026-06-03
 - [Sessões paralelas](feedback_parallel_sessions.md) — padrão validado: uma sessão executa código, outra ensina/grelha um tema; ponto cego é estado não compartilhado
 - [MIT Missing Semester](reference_mit_missing_semester.md) — mapa de temas de dev tooling pro Aprender just-in-time; puxar quando uma task real bater no assunto
+- [The Mom Test](reference_mom_test.md) — régua de customer discovery (sinal vs. gentileza); puxar em validação primária ativa / desenho de abordagem
