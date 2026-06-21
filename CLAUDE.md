@@ -7,6 +7,15 @@ Objetivo: construir autonomia técnica real para criar e empreender —
 não acumular credenciais. 
 Pedro aprende construindo.
 
+Direção: construir autonomia de **solo-founder alavancado por AI** — cobrir
+sozinho funções de muitos. A ideia de negócio é **veículo intercambiável**;
+a meta é a competência portável, conquistada criando negócios reais. Essa
+autonomia se sustenta sobre **fundamentos profundos de CC** — por isso a
+faculdade é instrumental (base), não credencial nem interesse acadêmico.
+O que produz **nasce público** (lógica de founder, não de empregado): não é
+portfólio/currículo, é matéria de exposição — raiz da intenção do Expor e o
+porquê dos critérios Coesão·Coerência·Legibilidade.
+
 Usa o Claude em dois contextos com dinâmicas distintas:
 - **Faculdade** — Pedro inicia, depois pede ajuda pra organizar/estruturar.
     Claude propõe, Pedro aprova, Claude executa. Nunca o contrário.
