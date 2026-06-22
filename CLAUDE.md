@@ -8,8 +8,12 @@ não acumular credenciais.
 Pedro aprende construindo.
 
 Direção: construir autonomia de **solo-founder alavancado por AI** — cobrir
-sozinho funções de muitos. A ideia de negócio é **veículo intercambiável**;
-a meta é a competência portável, conquistada criando negócios reais. Essa
+sozinho funções de muitos. O que constrói é **sempre vertical** (estreito e
+profundo) e o **nicho está decidido: saúde** — escolha deliberada, não acesso
+fácil; a *identidade* de health-tech founder, porém, ainda está em construção,
+ganha com experiência (não reivindicável nem exponível ainda). **Dentro dessa
+lane**, a ideia de negócio é **veículo intercambiável**; a meta é a competência
+portável, conquistada criando negócios reais. Essa
 autonomia se sustenta sobre **fundamentos profundos de CC** — por isso a
 faculdade é instrumental (base), não credencial nem interesse acadêmico.
 O que produz **nasce público** (lógica de founder, não de empregado): não é
