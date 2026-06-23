@@ -11,3 +11,5 @@ Sistema de orquestração, fluxo de aprendizado, skills vivas, frentes abertas e
 - [MIT Missing Semester](reference_mit_missing_semester.md) — mapa de temas de dev tooling pro Aprender just-in-time; puxar quando uma task real bater no assunto
 - [The Mom Test](reference_mom_test.md) — régua de customer discovery (sinal vs. gentileza); puxar em validação primária ativa / desenho de abordagem
 - [Diagnóstico: 2ª fonte antes de declarar](feedback_diagnostico_segunda_fonte.md) — não escalar pra conclusão grave a partir de dado único; confirmar com fonte independente
+- [Becos health-tech já mapeados](reference_health_tech_becos.md) — setores/wedges descartados (psi PF fiscal/cobrança; consultório no-show); checar antes de re-investigar
+- [Funil: kill é vitória](feedback_funil_kill_vitoria.md) — matar candidato barato é resultado positivo; topa encerrar o discovery se tudo negar; não dramatizar negações
