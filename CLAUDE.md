@@ -69,6 +69,8 @@ Coesão · Coerência · Legibilidade
 
 Antes de agir no sistema de orquestração (skills, memória, fluxo de aprendizado, Construções no Notion), ler `~/.claude/CONTEXT.md`. Conteúdo canônico gordo vive no Notion (página "Sistema de gestão"); `CONTEXT.md` é o mapa magro que aponta pra lá.
 
+- **Memória portável não se grava à mão no meio da sessão.** Fato de método marcado ("isso vale guardar") → anotar no contexto da sessão e seguir; o destino canônico se decide **só** no `destilar-transversal`. Nunca escrever na auto-memória do harness (é por-cwd → vira órfã).
+
 ---
 
 ## Contexto específico de stack, dinâmica e padrões

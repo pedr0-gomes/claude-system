@@ -13,3 +13,4 @@ Sistema de orquestração, fluxo de aprendizado, skills vivas, frentes abertas e
 - [Diagnóstico: 2ª fonte antes de declarar](feedback_diagnostico_segunda_fonte.md) — não escalar pra conclusão grave a partir de dado único; confirmar com fonte independente
 - [Becos health-tech já mapeados](reference_health_tech_becos.md) — setores/wedges descartados (psi PF fiscal/cobrança; consultório no-show); checar antes de re-investigar
 - [Funil: kill é vitória](feedback_funil_kill_vitoria.md) — matar candidato barato é resultado positivo; topa encerrar o discovery se tudo negar; não dramatizar negações
+- [Memória portável não se grava mid-session](feedback_memoria_portavel_harness.md) — auto-memória do harness é por-cwd e vira órfã; destino se decide só no destilar-transversal (ancora a lei homônima do CLAUDE.md global)
