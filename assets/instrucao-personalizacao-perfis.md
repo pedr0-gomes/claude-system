@@ -15,9 +15,14 @@ interesses** (`lista-mestre-interesses.md`) com contas concretas derivadas do re
 3. **Saúde fica fora do agente.** É cultivo deliberado, sem contas no consumo real —
    o agente garimpando "health" encheria o feed de ruído aspiracional no cluster mais
    sensível. Pedro semeia saúde **na mão**, curado.
-4. **Ritmo humano, devagar.** O Google já bloqueou por criar contas em sequência
-   rápida; follows em massa por bot numa conta nova disparam anti-spam do X. Seguir
-   **em ritmo pausado**, com intervalos, não tudo em minutos.
+4. **Ritmo humano, devagar — e fatiado em sessões.** O Google já bloqueou por criar
+   contas em sequência rápida; follows em massa por bot numa conta nova disparam
+   anti-spam do X. **Lição do 1º giro (2026-06-24): ritmo pausado não basta** — conta
+   nova tem **teto de follows por janela** (não só por minuto). O agente seguiu 15 e
+   levou `HTTP 429` ("Too Many Requests") a partir do @shreyas, mesmo espaçando. O
+   gargalo é o teto, não a cadência. Conserto: **fatiar em várias sessões/dias** (1-2
+   clusters por vez), não drenar a lista de uma vez; e **não re-testar com o limite
+   quente** (cada 429 sustenta o cooldown — ecoa o guard do bloqueio do Google).
 
 ---
 
@@ -67,6 +72,26 @@ buscar e seguir Netflix Brasil
 
 **Ao terminar:** me diga quais contas seguiu, quais não encontrou, e se alguma
 busca por nome ficou ambígua (mais de uma conta plausível) — pra eu decidir.
+
+---
+
+## Estado da execução (atualizar a cada sessão)
+
+**1ª sessão — 2026-06-24:** 15 contas seguidas antes do X bater o teto (`HTTP 429`).
+- **Confirmadas (15):** Fundamentos de CC *completo* (@bytebytego, @CompSciFact,
+  @TivadarDanka, @QuantaMagazine, @TechWithTimm, @mattpocockuk, @joelgrus) +
+  solo-founder *parcial* (@marclou, @gregisenberg, @startupideaspod, @ycombinator,
+  @snowmaker, @aaron_epstein, @paulg, @hnshah).
+- **▶ Retomar a partir de @shreyas.** Faltam: resto do solo-founder (@shreyas,
+  @ryancarson, @Av1dlive, @sairahul1) + clusters inteiros AI engineering, Vendas, PKM,
+  BR ecosystem, Founder-watching, F1, Filmes.
+- **Como retomar:** montar o prompt de continuação a partir do prompt principal acima,
+  cortando o que já foi feito, e instruir o agente a **ir mais devagar e parar bem
+  antes de qualquer recusa** (se vier 429, parar e reportar, não insistir).
+
+**YouTube — ✅ completo (2026-06-24):** 16 canais inscritos numa sessão, sem bloqueio
+(confirma que o teto era específico do X). A ambiguidade do "Chase AI" → @Chase-H-AI
+(137K, Claude Code/agentes/n8n) foi **confirmada por Pedro** como o canal certo.
 
 ---
 
