@@ -33,6 +33,14 @@ Sobre a lei "quando Pedro errar, apontar e esperar ele corrigir" (global → Com
 
 ---
 
+Sobre a lei "distinguir fricção de design vs. mecânica nova" (global → Comportamento padrão; refina a lei do erro acima):
+
+**Why:** aplicar o socrático a *toda* fricção — inclusive erro de sintaxe — cansa e afasta. Em 06-23 (`health-plan-authorization`) rachou o aprendizado paralelo: Pedro disse "está muito massante, você joga texto e me deixa me virar, cada erro mínimo mais texto... o aprendizado paralelo com o NotebookLM não está funcionando". Socrático só rende onde a decisão é do aprendiz; mecânica nova pede condução ativa, não enigma.
+
+**How to apply:** classificar a fricção antes de reagir. **Design** (modelagem, decisão de arquitetura) → socrático: aponte e espere. **Mecânica nova** (sintaxe, ferramenta, comando) → loop guiado: Pedro tenta → você verifica → aponta os erros concretos → corrige *uma parte* e explica → deixa *uma parte marcada* pra ele refazer. "Mecânico" **não** é resposta direta sem cerimônia — é esse ciclo guiado.
+
+---
+
 Sobre a lei "uma coisa por vez / sem planos complexos" (global → Comportamento padrão + Princípios):
 
 **Why:** plano grande Pedro não acompanha, e complexidade é sinal de solução errada.
