@@ -82,16 +82,72 @@ busca por nome ficou ambígua (mais de uma conta plausível) — pra eu decidir.
   @TivadarDanka, @QuantaMagazine, @TechWithTimm, @mattpocockuk, @joelgrus) +
   solo-founder *parcial* (@marclou, @gregisenberg, @startupideaspod, @ycombinator,
   @snowmaker, @aaron_epstein, @paulg, @hnshah).
-- **▶ Retomar a partir de @shreyas.** Faltam: resto do solo-founder (@shreyas,
-  @ryancarson, @Av1dlive, @sairahul1) + clusters inteiros AI engineering, Vendas, PKM,
+
+**2ª sessão — 2026-06-24:** 14 follows novos antes do X bater o teto de novo (`HTTP
+429` em @GaryMarcus; @shreyas já era seguido, pulado). Guard funcionou — parou no 1º
+429 e reportou.
+- **Confirmadas (14):** resto do solo-founder (@ryancarson, @Av1dlive, @sairahul1) +
+  AI engineering *parcial* (@claudeai, @anthropicai, @bcherny, @DarioAmodei,
+  @aiDotEngineer, @latentspacepod, @steipete, @chaseai__, @karpathy, @jeremyphoward,
+  @fchollet, @ylecun).
+- **▶ Retomar a partir de @GaryMarcus** (o follow NÃO concluiu — botão voltou a
+  "Follow"). Faltam: resto do AI engineering (@GaryMarcus, @hardmaru, @theneurondaily,
+  @genspark_ai, @mntruell, @ScottWu46, @petergyang) + clusters inteiros Vendas, PKM,
   BR ecosystem, Founder-watching, F1, Filmes.
+- **Teto confirmado ~14-15 follows/janela** (15 na 1ª, 14 na 2ª). É **por janela**, não
+  por cadência — esperar reset (horas, possivelmente teto diário em conta nova) antes de
+  retomar; **não re-testar com o limite quente** (cada 429 sustenta o cooldown).
 - **Como retomar:** montar o prompt de continuação a partir do prompt principal acima,
-  cortando o que já foi feito, e instruir o agente a **ir mais devagar e parar bem
-  antes de qualquer recusa** (se vier 429, parar e reportar, não insistir).
+  cortando o que já foi feito, e instruir o agente a **parar no 1º 429 e reportar onde**.
 
 **YouTube — ✅ completo (2026-06-24):** 16 canais inscritos numa sessão, sem bloqueio
 (confirma que o teto era específico do X). A ambiguidade do "Chase AI" → @Chase-H-AI
 (137K, Claude Code/agentes/n8n) foi **confirmada por Pedro** como o canal certo.
+
+---
+
+## Prompt de continuação — pronto pra colar (a partir de @GaryMarcus)
+
+Cola num agente de browser logado em `@pgsampaioitz` quando a janela de follows do X
+resetar. Reflete o estado de retomada acima; atualizar conforme avançar.
+
+> **Contexto:** Você está no meu navegador, logado na minha conta do X
+> (`@pgsampaioitz`). Continue **seguindo** as contas da lista abaixo, na ordem dada.
+> Onde eu der o @handle, siga direto; onde der só o nome, **busque a conta oficial e
+> siga**. **Não siga contas fora desta lista** — a curadoria é minha. **Não toque no
+> meu perfil** (bio/foto/nome).
+>
+> **Limite:** esta conta é nova e tem teto de follows por janela (~14-15) — já bateu
+> `HTTP 429` duas vezes. **Vá devagar, com intervalos.** Se aparecer erro de limite
+> (429 / "rate limited" / botão de seguir falhando), **pare imediatamente, não insista,
+> e me reporte em qual conta parou.** Não re-tente a mesma conta.
+>
+> **AI engineering / Claude (resto):**
+> @GaryMarcus, @hardmaru, @theneurondaily, @genspark_ai, @mntruell, @ScottWu46,
+> @petergyang
+>
+> **Vendas / customer discovery:** @Benioff, @gustavocaetano
+>
+> **PKM / writing:** @david_perell
+>
+> **Ecossistema tech/startup BR** (buscar por nome): Tallis Gomes, Bruno Nardon,
+> Romero Rodrigues, Lucas Montano, Rafael Milagre (Viver de IA), Código Fonte TV;
+> Nubank, C6 Bank, QuintoAndar, iFood; Tecnoblog, Canaltech, TechTudo, Olhar Digital,
+> TecMundo
+>
+> **Founder-watching — hábitos & lições de operação** (buscar por nome; priorizar quem
+> posta sobre *como opera*): Tim Cook, Satya Nadella, Sundar Pichai, Andy Jassy,
+> Mark Zuckerberg, Mary Barra, Michael Dell, Patrick Collison, Brian Chesky,
+> Henrique Dubugras
+>
+> **F1 (âncora pessoal):** @F1, Charles Leclerc
+>
+> **Filmes (âncora pessoal, leve):** buscar e seguir Netflix Brasil
+>
+> **Ao terminar (ou ao parar por limite):** me diga quais contas seguiu, quais não
+> encontrou, e se alguma busca por nome ficou ambígua — pra eu decidir.
+
+~33 contas restantes ÷ teto ~14/janela ⇒ provavelmente **2-3 janelas** pra fechar o X.
 
 ---
 
