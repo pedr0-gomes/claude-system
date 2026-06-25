@@ -100,13 +100,33 @@ busca por nome ficou ambígua (mais de uma conta plausível) — pra eu decidir.
 - **Como retomar:** montar o prompt de continuação a partir do prompt principal acima,
   cortando o que já foi feito, e instruir o agente a **parar no 1º 429 e reportar onde**.
 
+**3ª sessão — 2026-06-25:** 14 follows novos; o agente **parou proativamente** rente
+ao teto (não disparou 429 — guard de ritmo funcionou). X agora com **43 contas**.
+- **Confirmadas (14):** resto do AI engineering (@GaryMarcus, @hardmaru,
+  @theneurondaily, @genspark_ai, @petergyang) + Vendas *completo* (@Benioff,
+  @gustavocaetano já era) + PKM *completo* (@david_perell) + BR ecosystem *parcial*
+  (@tallisgomes, @brunonardon, @romerorodrigues, @lucas_montano, @RafaelMilagre,
+  @codigofontetv, @nubank).
+- **Já seguidos (não contaram):** @mntruell, @ScottWu46, @gustavocaetano.
+- **Clusters fechados até aqui:** Fundamentos CC, solo-founder, AI engineering,
+  Vendas, PKM. **AI engineering ✅ completo.**
+- **Ambiguidades reportadas pelo agente (Pedro decide):** (i) *Código Fonte TV* → o
+  agente pegou **@codigofontetv** (handle bate com o canal do YouTube); existe um
+  @CodigoFonte ("CodigoFonte.net") que é portal **diferente** — picK do agente parece
+  certo. (ii) *Rafael Milagre* → **@RafaelMilagre** ("Founder of Live on AI" = nome EN
+  de Viver de IA + "AI Mentor at G4business") — provável certo, "Viver de IA" não
+  aparece literal na bio.
+- **▶ Retomar a partir de C6 Bank.** Faltam ~21: resto do BR ecosystem (C6 Bank,
+  QuintoAndar, iFood, Tecnoblog, Canaltech, TechTudo, Olhar Digital, TecMundo) +
+  Founder-watching *inteiro* (10) + F1 (@F1, Charles Leclerc) + Filmes (Netflix Brasil).
+
 **YouTube — ✅ completo (2026-06-24):** 16 canais inscritos numa sessão, sem bloqueio
 (confirma que o teto era específico do X). A ambiguidade do "Chase AI" → @Chase-H-AI
 (137K, Claude Code/agentes/n8n) foi **confirmada por Pedro** como o canal certo.
 
 ---
 
-## Prompt de continuação — pronto pra colar (a partir de @GaryMarcus)
+## Prompt de continuação — pronto pra colar (a partir de C6 Bank)
 
 Cola num agente de browser logado em `@pgsampaioitz` quando a janela de follows do X
 resetar. Reflete o estado de retomada acima; atualizar conforme avançar.
@@ -118,22 +138,12 @@ resetar. Reflete o estado de retomada acima; atualizar conforme avançar.
 > meu perfil** (bio/foto/nome).
 >
 > **Limite:** esta conta é nova e tem teto de follows por janela (~14-15) — já bateu
-> `HTTP 429` duas vezes. **Vá devagar, com intervalos.** Se aparecer erro de limite
-> (429 / "rate limited" / botão de seguir falhando), **pare imediatamente, não insista,
-> e me reporte em qual conta parou.** Não re-tente a mesma conta.
+> `HTTP 429`. **Vá devagar, com intervalos.** Se aparecer erro de limite (429 / "rate
+> limited" / botão de seguir falhando), **pare imediatamente, não insista, e me reporte
+> em qual conta parou.** Não re-tente a mesma conta.
 >
-> **AI engineering / Claude (resto):**
-> @GaryMarcus, @hardmaru, @theneurondaily, @genspark_ai, @mntruell, @ScottWu46,
-> @petergyang
->
-> **Vendas / customer discovery:** @Benioff, @gustavocaetano
->
-> **PKM / writing:** @david_perell
->
-> **Ecossistema tech/startup BR** (buscar por nome): Tallis Gomes, Bruno Nardon,
-> Romero Rodrigues, Lucas Montano, Rafael Milagre (Viver de IA), Código Fonte TV;
-> Nubank, C6 Bank, QuintoAndar, iFood; Tecnoblog, Canaltech, TechTudo, Olhar Digital,
-> TecMundo
+> **Ecossistema tech/startup BR (resto)** (buscar conta oficial por nome): C6 Bank,
+> QuintoAndar, iFood; Tecnoblog, Canaltech, TechTudo, Olhar Digital, TecMundo
 >
 > **Founder-watching — hábitos & lições de operação** (buscar por nome; priorizar quem
 > posta sobre *como opera*): Tim Cook, Satya Nadella, Sundar Pichai, Andy Jassy,
@@ -147,7 +157,7 @@ resetar. Reflete o estado de retomada acima; atualizar conforme avançar.
 > **Ao terminar (ou ao parar por limite):** me diga quais contas seguiu, quais não
 > encontrou, e se alguma busca por nome ficou ambígua — pra eu decidir.
 
-~33 contas restantes ÷ teto ~14/janela ⇒ provavelmente **2-3 janelas** pra fechar o X.
+~21 contas restantes ÷ teto ~14/janela ⇒ provavelmente **1-2 janelas** pra fechar o X.
 
 ---
 
