@@ -116,9 +116,21 @@ ao teto (não disparou 429 — guard de ritmo funcionou). X agora com **43 conta
   certo. (ii) *Rafael Milagre* → **@RafaelMilagre** ("Founder of Live on AI" = nome EN
   de Viver de IA + "AI Mentor at G4business") — provável certo, "Viver de IA" não
   aparece literal na bio.
-- **▶ Retomar a partir de C6 Bank.** Faltam ~21: resto do BR ecosystem (C6 Bank,
-  QuintoAndar, iFood, Tecnoblog, Canaltech, TechTudo, Olhar Digital, TecMundo) +
-  Founder-watching *inteiro* (10) + F1 (@F1, Charles Leclerc) + Filmes (Netflix Brasil).
+- **Retomar a partir de C6 Bank** *(consumido na 4ª sessão abaixo).*
+
+**4ª sessão — 2026-06-25:** 14 follows novos; o agente **parou proativamente** rente
+ao teto (~14-15), sem disparar 429 (parada precaucionária). X agora com **57 contas**.
+- **Confirmadas (14):** Ecossistema BR *completo* (@C6Bank, @quintoandar, @iFood,
+  @Tecnoblog, @canaltech, @TechTudo, @olhardigital, @Tec_Mundo) + Founder-watching
+  *parcial 6/10* (@tim_cook, @satyanadella, @sundarpichai, @ajassy, @finkd `=Zuckerberg`,
+  @mtbarra `=Mary Barra`, parou aqui).
+- **Clusters fechados até aqui:** Fundamentos CC, solo-founder, AI engineering, Vendas,
+  PKM, **Ecossistema tech/startup BR ✅ completo.**
+- **Ambiguidade conferida pelo agente:** TecMundo → @Tec_Mundo (verificado no perfil:
+  993K seguidores, links tecmundo.com.br; sem badge no resultado de busca, conferido na mão).
+- **▶ Retomar a partir de Michael Dell.** Faltam ~7: Founder-watching (Michael Dell,
+  Patrick Collison, Brian Chesky, Henrique Dubugras) + F1 (@F1, Charles Leclerc) +
+  Filmes (Netflix Brasil) ⇒ provavelmente **1 janela** pra fechar o X.
 
 **YouTube — ✅ completo (2026-06-24):** 16 canais inscritos numa sessão, sem bloqueio
 (confirma que o teto era específico do X). A ambiguidade do "Chase AI" → @Chase-H-AI
@@ -126,7 +138,7 @@ ao teto (não disparou 429 — guard de ritmo funcionou). X agora com **43 conta
 
 ---
 
-## Prompt de continuação — pronto pra colar (a partir de C6 Bank)
+## Prompt de continuação — pronto pra colar (a partir de Michael Dell)
 
 Cola num agente de browser logado em `@pgsampaioitz` quando a janela de follows do X
 resetar. Reflete o estado de retomada acima; atualizar conforme avançar.
@@ -142,12 +154,8 @@ resetar. Reflete o estado de retomada acima; atualizar conforme avançar.
 > limited" / botão de seguir falhando), **pare imediatamente, não insista, e me reporte
 > em qual conta parou.** Não re-tente a mesma conta.
 >
-> **Ecossistema tech/startup BR (resto)** (buscar conta oficial por nome): C6 Bank,
-> QuintoAndar, iFood; Tecnoblog, Canaltech, TechTudo, Olhar Digital, TecMundo
->
 > **Founder-watching — hábitos & lições de operação** (buscar por nome; priorizar quem
-> posta sobre *como opera*): Tim Cook, Satya Nadella, Sundar Pichai, Andy Jassy,
-> Mark Zuckerberg, Mary Barra, Michael Dell, Patrick Collison, Brian Chesky,
+> posta sobre *como opera*): Michael Dell, Patrick Collison, Brian Chesky,
 > Henrique Dubugras
 >
 > **F1 (âncora pessoal):** @F1, Charles Leclerc
@@ -157,7 +165,7 @@ resetar. Reflete o estado de retomada acima; atualizar conforme avançar.
 > **Ao terminar (ou ao parar por limite):** me diga quais contas seguiu, quais não
 > encontrou, e se alguma busca por nome ficou ambígua — pra eu decidir.
 
-~21 contas restantes ÷ teto ~14/janela ⇒ provavelmente **1-2 janelas** pra fechar o X.
+~7 contas restantes ⇒ provavelmente **1 janela** pra fechar o X.
 
 ---
 
