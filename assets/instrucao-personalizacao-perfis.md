@@ -161,6 +161,116 @@ resetar. Reflete o estado de retomada acima; atualizar conforme avançar.
 
 ---
 
+## Prompt pro agente (Instagram) — adicionado 2026-06-25
+
+**Natureza da rede (por que a lista do IG ≠ a do X).** O Instagram é plataforma *mais
+leve*, de **pessoas e imagem**. O Pedro o usa pra acompanhar **pessoas-referência** das
+áreas de interesse — gente que **inspira e educa ao divulgar sobre si / como opera**,
+não portal de notícia nem conta de marca. Por isso a lista do IG é **curada pra
+pessoas**: os **portais** (Tecnoblog, Canaltech, TechTudo, Olhar Digital, TecMundo) e as
+**marcas corporativas** (Nubank, C6 Bank, QuintoAndar, iFood, Código Fonte TV) que
+faziam sentido no X **saem por padrão** — Pedro restaura caso a caso. Ficam: âncoras
+pessoais que são marca de propósito (F1, Netflix) e contas que **educam visualmente**
+(ByteByteGo, Quanta).
+
+**Teto de follows — mais rígido que o X.** Conta nova de Instagram tem anti-spam
+agressivo: bloqueia a ação ("**Action Blocked**" / "**Try Again Later**" / "We restrict
+certain activity") depois de **poucos** follows, sobretudo se rápidos. Vale a trava 4
+do X, **reforçada**: começar **bem conservador** (~5-10 follows na 1ª sessão), ritmo
+lento com intervalos, e **parar no 1º bloqueio sem insistir** (cada bloqueio sustenta o
+cooldown). Fatiar por cluster ao longo de dias. As demais travas valem iguais:
+identidade fica na mão (agente só segue), **saúde fora do agente** (cultivo manual), o
+agente **executa a lista, não decide quem seguir**.
+
+**Lista curada pra IG (pessoas-primeiro).** Onde há só nome, o agente busca a conta
+oficial e segue; se não achar IG ativo (muitos thinkers de CC/AI são X-native), reporta
+e segue em frente.
+
+- **Founder-watching — como operam** (núcleo forte no IG; pessoas que mostram a
+  operação/bastidor): Tim Cook, Satya Nadella, Sundar Pichai, Mark Zuckerberg,
+  Brian Chesky, Patrick Collison, Henrique Dubugras, Andy Jassy, Mary Barra, Michael Dell
+- **Solo-founder / build-in-public** (pessoas): Greg Isenberg, Marc Lou, Aaron Epstein,
+  Ryan Carson, Rahul (@sairahul1). *X-native, tentar e reportar se sem IG:* Paul Graham,
+  Shreyas Doshi, Hiten Shah
+- **BR ecossistema — pessoas** (forte no IG BR): Tallis Gomes, Bruno Nardon,
+  Romero Rodrigues, Lucas Montano, Rafael Milagre (Viver de IA)
+- **AI engineering** (fit fraco no IG; tentar e reportar): Andrej Karpathy, Dario Amodei,
+  Yann LeCun, Jeremy Howard. *Marca, opcional (Pedro decide):* @claudeai, @anthropicai
+- **CC / educação visual** (entram por educar com imagem): @bytebytego, Quanta Magazine,
+  Tech With Tim
+- **Vendas:** Marc Benioff, Gustavo Caetano
+- **Escrita / PKM:** David Perell
+- **F1 (âncora pessoal):** @F1, Charles Leclerc
+- **Filmes (âncora pessoal, leve):** Netflix Brasil
+
+### Prompt pronto pra colar (Instagram)
+
+Cola num agente de browser logado em `@pgsampaioitz` no Instagram.
+
+> **Contexto:** Você está no meu navegador, logado na minha conta nova do **Instagram**
+> (`@pgsampaioitz`). Quero que você **siga** as pessoas/contas da lista abaixo. Onde eu
+> der o @handle, siga direto; onde der só o nome, **busque a conta oficial e siga**.
+> **Não siga contas fora desta lista** — a curadoria é minha. **Não toque no meu perfil**
+> (bio/foto/nome).
+>
+> **Limite (importante):** esta conta é **nova** e o Instagram bloqueia ações em massa.
+> **Vá bem devagar, com intervalos entre os follows.** Se aparecer qualquer aviso de
+> bloqueio ("Action Blocked", "Try Again Later", "We restrict certain activity", ou o
+> botão de seguir falhar/voltar pra "Seguir"), **pare imediatamente, não insista, e me
+> reporte em qual conta parou.** Não re-tente a mesma conta.
+>
+> **Founder-watching** (buscar por nome): Tim Cook, Satya Nadella, Sundar Pichai,
+> Mark Zuckerberg, Brian Chesky, Patrick Collison, Henrique Dubugras, Andy Jassy,
+> Mary Barra, Michael Dell
+>
+> **Solo-founder / build-in-public** (buscar por nome): Greg Isenberg, Marc Lou,
+> Aaron Epstein, Ryan Carson, Rahul Vohra; e tente Paul Graham, Shreyas Doshi, Hiten Shah
+> (podem não ter Instagram ativo — se não achar, me avise e siga em frente)
+>
+> **Referências BR** (buscar por nome): Tallis Gomes, Bruno Nardon, Romero Rodrigues,
+> Lucas Montano, Rafael Milagre (Viver de IA)
+>
+> **AI / tecnologia** (buscar por nome; podem não ter IG ativo): Andrej Karpathy,
+> Dario Amodei, Yann LeCun, Jeremy Howard
+>
+> **Educação visual de tecnologia:** @bytebytego, Quanta Magazine, Tech With Tim
+>
+> **Vendas:** Marc Benioff, Gustavo Caetano · **Escrita:** David Perell
+>
+> **F1:** @F1, Charles Leclerc · **Filmes:** Netflix Brasil
+>
+> **Ao terminar (ou ao parar por bloqueio):** me diga quais contas seguiu, quais não
+> encontrou, e se alguma busca por nome ficou ambígua (mais de uma conta plausível) —
+> pra eu decidir.
+
+**Estado da execução (Instagram): ✅ CONCLUÍDO 2026-06-25.**
+
+**1ª sessão — 2026-06-25:** lista **inteira numa sessão, 25 follows, SEM nenhum
+bloqueio** ("Action Blocked"/"Try Again Later" nunca apareceram). **Derruba a previsão**
+"IG mais rígido que o X" (o X travou em ~14-15; o IG fez 25 limpo) — **n=1**, não
+generalizar: pode ser que o IG não limite follow de conta verificada do mesmo jeito, ou
+que o teto seja por *velocidade* e o ritmo lento do agente o evitou. Vigiar se o IG
+bloqueia em sessões futuras antes de relaxar o guard.
+- **Seguidas (25):** Founder-watching — @satyanadella (privada, pedido enviado),
+  @sundarpichai, @zuck, @bchesky, @patrickcollison, @hdubugras, @ajassy (privada, pedido
+  enviado), @michaeldell · Solo-founder — @gregisenberg, @marclouvion, @ryancarson · BR —
+  @tallisgomes, @bruno.nardon, @romerorodrigues, @lucasmontano, @rafaelmilagre · Educação
+  visual — @bytebytego, @quantamag, @tech_with_tim · Vendas — @benioff, @gustavocaetano ·
+  Escrita — @davidperell · F1 — @f1, @charles_leclerc · Filmes — @netflixbrasil.
+- **Não encontradas (sem conta oficial/verificada):** Tim Cook (só fakes + "lethimcooktv"
+  meme), Mary Barra, Rahul Vohra; Paul Graham, Shreyas Doshi, Hiten Shah (X-native, como
+  previsto); **todo o grupo AI** — Karpathy, Dario Amodei, LeCun, Jeremy Howard (sem selo
+  verificado, não dava pra confirmar autenticidade). Confirma o fit fraco de CC/AI no IG.
+- **Decisão pendente do Pedro:** **Aaron Epstein** — @aaronepstein verificado é um
+  *fotógrafo*, não o co-founder do Creative Market; agente não seguiu (pessoa errada).
+  Passar o @handle certo se quiser seguir.
+- **Ambiguidade resolvida pelo agente:** Romero Rodrigues → **@romerorodrigues** (bio:
+  "Fundador do Buscapé, sócio da Headline e Redpoint" = o certo), não @romerorodriguespb.
+- **Marcas/opcionais não incluídas neste giro:** @claudeai, @anthropicai (AI eng, marca)
+  ficaram de fora — Pedro adiciona na mão se quiser.
+
+---
+
 ## Reuso pras outras redes (ordem: X → YouTube/Reddit → FB/LinkedIn/IG)
 
 Mesma lógica, trocando "seguir contas" por:
