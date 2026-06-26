@@ -128,9 +128,17 @@ ao teto (~14-15), sem disparar 429 (parada precaucionária). X agora com **57 co
   PKM, **Ecossistema tech/startup BR ✅ completo.**
 - **Ambiguidade conferida pelo agente:** TecMundo → @Tec_Mundo (verificado no perfil:
   993K seguidores, links tecmundo.com.br; sem badge no resultado de busca, conferido na mão).
-- **▶ Retomar a partir de Michael Dell.** Faltam ~7: Founder-watching (Michael Dell,
-  Patrick Collison, Brian Chesky, Henrique Dubugras) + F1 (@F1, Charles Leclerc) +
-  Filmes (Netflix Brasil) ⇒ provavelmente **1 janela** pra fechar o X.
+- ~~**▶ Retomar a partir de Michael Dell.** Faltam ~7~~ → consumido na 5ª sessão.
+
+**5ª sessão — 2026-06-26:** 7 follows, **sem 429** (a janela aguentou as 7). X agora
+com **64 contas** — **✅ X CONCLUÍDO.**
+- **Confirmadas (7):** Founder-watching *completo* (@MichaelDell, @patrickc `=Collison`,
+  @bchesky `=Brian Chesky`, @hdubugras `=Henrique Dubugras`) + F1 (@F1, @Charles_Leclerc)
+  + Filmes (@NetflixBrasil, selo dourado).
+- **Ambiguidade conferida pelo agente:** "Netflix Brasil" tinha fan/paródia logo abaixo
+  (Netflix Games Brasil, One Piece Netflix Brasil); seguiu só a oficial @NetflixBrasil.
+- **Achado:** a 5ª janela aceitou 7 sem disparar o teto — coerente com "~14-15/janela"
+  (folga sobrou). Fim da fila do X, não foi preciso testar o teto de novo.
 
 **YouTube — ✅ completo (2026-06-24):** 16 canais inscritos numa sessão, sem bloqueio
 (confirma que o teto era específico do X). A ambiguidade do "Chase AI" → @Chase-H-AI
