@@ -287,6 +287,153 @@ bloqueia em sessões futuras antes de relaxar o guard.
 
 ---
 
+## Prompt pro agente (LinkedIn) — adicionado 2026-06-27
+
+**Natureza da rede (por que a lista do LinkedIn ≠ X e IG).** O LinkedIn é rede
+**profissional**: feed de operação, build-in-public sério, empresas e founders falando
+de como tocam o negócio. Três escolhas específicas dela:
+
+1. **Seguir, NÃO conectar.** *Follow* é mão única (consumo, sem aceite, sem teto
+   agressivo) — análogo ao X/IG. *Connect* é ato de **relação/credibilidade** (a pessoa
+   vê e aceita) = a "interação health-tech" que é do Pedro, na mão, e bate na régua
+   "identidade não exponível ainda". O agente **só segue**, nunca envia convite de
+   conexão. Reforça a trava 1 (identidade fica na mão).
+2. **Marcas/empresas FICAM** (oposto do IG, que cortou). Company page é nativa e
+   profissional aqui — Anthropic, YC, Nubank, C6, iFood, QuintoAndar entram.
+3. **Âncoras pessoais SAEM por padrão** (F1, Charles Leclerc, Netflix). Contexto
+   profissional; lazer fora (espelha o IG cortando portais). Pedro restaura caso a caso.
+
+**Teto de follows.** LinkedIn é agressivo contra automação e tem limites de ação em
+conta nova (avisos tipo "You're approaching the limit", "Take a break"). Vale a trava 4
+**reforçada como no IG**: começar conservador (~5-10 follows na 1ª sessão), ritmo lento
+com intervalos, **parar no 1º bloqueio sem insistir**, fatiar por cluster ao longo de
+dias. Demais travas iguais: identidade na mão (só segue), **saúde fora do agente**
+(cultivo manual), o agente **executa a lista, não decide quem seguir**.
+
+**Lista curada pra LinkedIn (proposta — Pedro cura antes de rodar).** Onde há só nome, o
+agente busca o perfil oficial/verificado e segue; muitos thinkers de CC/AI são X-native
+e podem não ter LinkedIn ativo — reporta e segue em frente.
+
+- **Founder-watching — como operam** (núcleo forte no LinkedIn): Tim Cook,
+  Satya Nadella, Sundar Pichai, Andy Jassy, Mark Zuckerberg, Mary Barra, Michael Dell,
+  Patrick Collison, Brian Chesky, Henrique Dubugras
+- **Solo-founder / build-in-public** (pessoas): Greg Isenberg, Marc Lou, Aaron Epstein,
+  Ryan Carson, Paul Graham, Hiten Shah, Shreyas Doshi; *empresa:* Y Combinator
+- **AI engineering / Claude**: Dario Amodei, Andrej Karpathy, Jeremy Howard, Yann LeCun,
+  François Chollet, Gary Marcus; *empresas:* Anthropic
+- **Fundamentos de CC**: ByteByteGo (Alex Xu), Quanta Magazine, Matt Pocock,
+  Tivadar Danka, Joel Grus
+- **Vendas**: Marc Benioff, Gustavo Caetano
+- **Sistemas de conhecimento / writing**: David Perell
+- **Ecossistema tech/startup BR** (forte no LinkedIn BR): Tallis Gomes, Bruno Nardon,
+  Romero Rodrigues, Lucas Montano, Rafael Milagre (Viver de IA); *empresas:* Nubank,
+  C6 Bank, QuintoAndar, iFood
+- **Cortados por padrão (Pedro restaura se quiser):** F1, Charles Leclerc, Netflix
+  (âncoras pessoais, fora do contexto profissional); portais de notícia (Tecnoblog,
+  Canaltech, TechTudo, Olhar Digital, TecMundo — pouco valor no feed profissional)
+
+### Prompt pronto pra colar (LinkedIn)
+
+Cola num agente de browser logado em `@pgsampaioitz` no LinkedIn.
+
+> **Contexto:** Você está no meu navegador, logado na minha conta nova do **LinkedIn**.
+> Quero que você **siga** (botão "Seguir"/"Follow") as pessoas e empresas da lista
+> abaixo. **NÃO envie convite de conexão ("Conectar"/"Connect")** — apenas seguir. Onde
+> eu der o nome, **busque o perfil oficial/verificado e siga**. **Não siga contas fora
+> desta lista** — a curadoria é minha. **Não toque no meu perfil** (foto/título/bio).
+>
+> **Limite (importante):** esta conta é **nova** e o LinkedIn bloqueia ações em massa.
+> **Vá bem devagar, com intervalos entre os follows.** Se aparecer qualquer aviso de
+> limite ("You're approaching the limit", "Take a break", botão de seguir falhando ou
+> voltando), **pare imediatamente, não insista, e me reporte em qual conta parou.** Não
+> re-tente a mesma conta. Comece pelos primeiros ~5-10 e pare se sentir resistência.
+>
+> **Founder-watching** (buscar por nome): Tim Cook, Satya Nadella, Sundar Pichai,
+> Andy Jassy, Mark Zuckerberg, Mary Barra, Michael Dell, Patrick Collison, Brian Chesky,
+> Henrique Dubugras
+>
+> **Solo-founder / build-in-public** (buscar por nome; podem ser X-native — se não achar
+> LinkedIn ativo, me avise e siga em frente): Greg Isenberg, Marc Lou, Aaron Epstein
+> (co-founder do Creative Market), Ryan Carson, Paul Graham, Hiten Shah, Shreyas Doshi;
+> e a empresa Y Combinator
+>
+> **AI engineering** (buscar por nome): Dario Amodei, Andrej Karpathy, Jeremy Howard,
+> Yann LeCun, François Chollet, Gary Marcus; e a empresa Anthropic
+>
+> **Fundamentos de CC** (buscar por nome): ByteByteGo (Alex Xu), Quanta Magazine,
+> Matt Pocock, Tivadar Danka, Joel Grus
+>
+> **Vendas:** Marc Benioff, Gustavo Caetano · **Escrita:** David Perell
+>
+> **Ecossistema BR** (buscar por nome): Tallis Gomes, Bruno Nardon, Romero Rodrigues,
+> Lucas Montano, Rafael Milagre (Viver de IA); e as empresas Nubank, C6 Bank,
+> QuintoAndar, iFood
+>
+> **Ao terminar (ou ao parar por limite):** me diga quais contas seguiu, quais não
+> encontrou, e se alguma busca por nome ficou ambígua (mais de um perfil plausível) —
+> pra eu decidir. Lembre: só **seguir**, nunca conectar.
+
+**Estado da execução (LinkedIn):**
+
+**1ª sessão — 2026-06-27:** 18 follows lisos e instantâneos, depois **throttle** — as
+páginas (inclusive o feed) ficaram presas em "carregando" indefinidamente. Guard
+funcionou: agente parou, não insistiu, não recarregou. LinkedIn agora com **18 contas**.
+- **Achado (n=1): teto ~18/janela, mais BRANDO que IG/X** — foi *throttle de
+  carregamento*, não o "Action Blocked" duro do IG; conta nova logo após várias ações.
+  Régua-por-rede: começar conservador segue valendo, mas o sinal aqui é página presa, não
+  erro explícito.
+- **Seguidos (18):** Founders — Satya Nadella, Sundar Pichai, Andy Jassy, Mary Barra,
+  Michael Dell, Patrick Collison, Brian Chesky, Henrique Dubugras · Solo/build-in-public —
+  Greg Isenberg, Ryan Carson, Hiten Shah, Shreyas Doshi, Y Combinator (empresa) · AI —
+  Yann LeCun, Anthropic (empresa) · CC fundamentos — Alex Xu (ByteByteGo), Quanta Magazine.
+- **Não encontrados (sem perfil oficial seguível):** Tim Cook, Mark Zuckerberg (só
+  homônimos), Marc Lou (X-native). Todos já consumidos no X/IG — sem ação.
+- **Decisão "só Conectar" → PULAR (decidido 2026-06-27):** Paul Graham, Dario Amodei,
+  Andrej Karpathy, Jeremy Howard, François Chollet, Gary Marcus só ofereciam "Conectar".
+  **Não conectar:** (a) todos já seguidos no X (reúso multi-rede cobre); (b) connect a
+  frio com famosos em conta nova arrisca restrição. *Antes de descartar definitivo, na
+  próxima sessão checar o menu "More/…" no perfil — Follow costuma estar escondido lá
+  quando "Conectar" é o botão primário.*
+- **Ambiguidades resolvidas:** Ryan Carson → **mantido** (headline "4x Founder/Dev/CEO",
+  Hartford, 24k — bate com Treehouse/Carsonified). ByteByteGo → seguido Alex Xu (pessoa);
+  **adicionar a página-empresa ByteByteGo** na próxima sessão (é o motor do conteúdo
+  visual de system design).
+- **▶ Retomar a partir de Matt Pocock** (busca nunca carregou; nenhuma ação nele).
+  Faltam: Matt Pocock, Tivadar Danka, Joel Grus + página ByteByteGo (empresa) · Vendas —
+  Marc Benioff, Gustavo Caetano · Escrita — David Perell · BR — Tallis Gomes,
+  Bruno Nardon, Romero Rodrigues, Lucas Montano, Rafael Milagre, e empresas Nubank,
+  C6 Bank, QuintoAndar, iFood. Esperar a janela resetar (horas/dia seguinte) antes de
+  retomar; checar o menu "More/…" dos 6 "só Conectar" se quiser reconsiderá-los.
+
+### Prompt de continuação — pronto pra colar (a partir de Matt Pocock)
+
+Cola num agente de browser logado no LinkedIn quando a janela resetar.
+
+> **Contexto:** Você está no meu navegador, logado na minha conta nova do **LinkedIn**.
+> Continue **seguindo** (botão "Seguir"/"Follow") as contas abaixo, na ordem dada. **NÃO
+> envie convite de conexão ("Conectar")** — apenas seguir. Onde eu der o nome, **busque o
+> perfil oficial/verificado e siga**. **Não siga contas fora desta lista.** **Não toque no
+> meu perfil.**
+>
+> **Limite:** conta nova, já deu throttle (páginas travando) após ~18 follows. **Vá
+> devagar, com intervalos.** Se as páginas começarem a travar/não carregar, ou aparecer
+> aviso de limite, **pare imediatamente, não insista, não recarregue à força, e me reporte
+> onde parou.** Não re-tente a mesma conta.
+>
+> **CC fundamentos** (buscar por nome): Matt Pocock, Tivadar Danka, Joel Grus; e a
+> **página-empresa ByteByteGo** (além do Alex Xu, que já sigo)
+>
+> **Vendas:** Marc Benioff, Gustavo Caetano · **Escrita:** David Perell
+>
+> **Ecossistema BR** (buscar por nome): Tallis Gomes, Bruno Nardon, Romero Rodrigues,
+> Lucas Montano, Rafael Milagre (Viver de IA); e as empresas Nubank, C6 Bank, QuintoAndar,
+> iFood
+>
+> **Ao terminar (ou ao parar por limite):** me diga quais seguiu, quais não encontrou, e
+> ambiguidades — pra eu decidir. Só **seguir**, nunca conectar.
+
+---
+
 ## Reuso pras outras redes (ordem: X → YouTube/Reddit → FB/LinkedIn/IG)
 
 Mesma lógica, trocando "seguir contas" por:
