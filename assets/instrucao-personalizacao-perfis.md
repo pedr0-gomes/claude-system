@@ -373,7 +373,23 @@ Cola num agente de browser logado em `@pgsampaioitz` no LinkedIn.
 > encontrou, e se alguma busca por nome ficou ambígua (mais de um perfil plausível) —
 > pra eu decidir. Lembre: só **seguir**, nunca conectar.
 
-**Estado da execução (LinkedIn):**
+**Estado da execução (LinkedIn): ✅ CONCLUÍDO 2026-06-28 — 34 contas (18 + 16).**
+
+**2ª sessão — 2026-06-28:** as 16 restantes (de Matt Pocock) seguidas **lisas, sem
+throttle** — a janela já aguentou a lista inteira de uma, um dia depois da 1ª. **Refina o
+achado n=1 do teto:** o teto ~18/janela do dia 27 era *conta muito nova logo após criação*,
+não um limite estável da rede; ~1 dia depois a mesma conta seguiu 16 sem trava. O sinal
+"começar conservador em conta nova" segue valendo; "~18/janela" **não** é constante.
+- **Seguidas (16):** CC fund. — Matt Pocock, Tivadar Danka, Joel Grus, **ByteByteGo
+  (empresa)** · Vendas — Marc Benioff, Gustavo Caetano · Escrita — David Perell · BR pessoas
+  — Tallis Gomes, Bruno Nardon, Romero Rodrigues, Lucas Montano, Rafael Milagre · BR
+  empresas — Nubank, C6 Bank, QuintoAndar, iFood. Todos verificados (badge), nenhum não-encontrado.
+- **Ambiguidades resolvidas (régua: não inflar; principal > secundária):** Benioff
+  "Personal Page" → **não seguido** (CEO oficial já cobre); "Grupo QuintoAndar" (21k) →
+  **não seguido** (marca principal 708k já cobre).
+- **Pendência manual não fechada:** os 6 "só Conectar" (PG, Dario, Karpathy, Howard,
+  Chollet, Marcus) — não foi checado o menu "More/…". Deixados pulados (já no X); reabrir só
+  se quiser reconsiderar. Não bloqueia o fechamento da rede.
 
 **1ª sessão — 2026-06-27:** 18 follows lisos e instantâneos, depois **throttle** — as
 páginas (inclusive o feed) ficaram presas em "carregando" indefinidamente. Guard
