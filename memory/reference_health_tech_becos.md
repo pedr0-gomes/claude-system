@@ -21,10 +21,24 @@ mata candidato acrescenta uma linha aqui.
   Doctoralia, Clínica nas Nuvens + dezenas de "WhatsApp pra clínica"); o buraco é
   **de adoção, não de produto** — fechar adoção é canal/implantação, quase
   consultoria, não código. Há dor e WTP reais, mas não sobra wedge pra dev solo.
+- **AI scribe clínico (documentação/transcrição de consulta por IA).**
+  Descartado por pesquisa de mesa (06-28, projeto `ai-scribe-clinico-br`, após
+  Investigar + 1 giro de Aprender). Dois cortes: (1) **mercado dominado** —
+  players grandes e capitalizados já ocupam a categoria (ex.: Abridge,
+  Nuance/DAX, Nabla); não é nicho desservido, é categoria madura; (2)
+  **não-vendável solo** — entrega real exige integração com prontuário/EHR +
+  compliance de dado clínico + venda enterprise — barreira estrutural
+  incompatível com solo-founder.
 
-**Molde que falhou nos dois:** wedge *genérico* em mercado de saúde *já servido*,
-buscado pra **fora** (mercado amplo) e alcançado por **cast frio**. O padrão e os
-sinais de não-mercado que o detectam estão em [[reference-mom-test]].
+**Molde que falhou nos dois primeiros:** wedge *genérico* em mercado de saúde
+*já servido*, buscado pra **fora** (mercado amplo) e alcançado por **cast frio**.
+O padrão e os sinais de não-mercado que o detectam estão em [[reference-mom-test]].
+
+**2º molde que falhou (ai-scribe):** *produto-aposta em mercado quente já
+dominado*, onde a barreira de entrega é **estrutural, não de execução**.
+Diferente do 1º molde (wedge raso/cast frio): aqui o wedge até existe, mas a
+*forma de entrega* (enterprise/integração/compliance) não cabe num solo. Régua:
+testar **viabilidade-solo** cedo, não só existência-de-dor.
 
 **How to apply:** antes de abrir Investigar num setor health-tech, checar esta
 lista; se o candidato cair num beco já marcado (ou repetir o molde acima), não
