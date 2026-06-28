@@ -29,6 +29,13 @@ Por isso precisa deixar uma **sombra inspecionável** (a nota). Sem ela, não se
 distingue "aprendi" de "senti que aprendi", e não sobra âncora pro Expor. O
 bloco não obriga um próximo; opcionalmente a nota vira âncora do Expor.
 
+**Guard de pré-condição (Aprender→Expor)** *(2026-06-25, health-plan-authorization)*:
+se a composição com o Expor está no horizonte, **capture a jornada crua
+antes de rodar o Aprender.** A nota consolidada é limpa de propósito e *lava*
+a voz e o caminho percorrido — que é justamente o combustível do Expor.
+Guarde o cru (transcrição/marcadores → Notion) primeiro; rode o Aprender
+depois.
+
 ## A régua
 
 Duas, entrelaçadas — são o coração da skill:
@@ -67,6 +74,15 @@ recontagem-grelhada peça-a-peça → nota consolidada
    as seções úteis") é aposta cega: introduz viés de confirmação e quebra
    "grelhar contra a fonte". O corte no prompt é reversível (curadoria
    just-in-time); a amputação da fonte não.
+
+   **Quando o aprendizado está situado num projeto, os artefatos locais
+   (código, PRD, diagrama) podem ser as próprias fontes-bitola e dispensar o
+   NotebookLM** *(n=1, health-plan-authorization)* — a recontagem-grelhada
+   (régua 2) roda direto contra eles. Confirmado na virada procedural→OO
+   grelhada contra `Plano.java` + PRD §4.2, sem abrir a ferramenta. O
+   NotebookLM entra quando o material precisa ser *montado* de fontes
+   externas; situado, com artefatos densos já no projeto, é setup
+   desnecessário.
 
 2. **Diagnóstico do formato** — **grelhe** Pedro pra decidir qual *tipo* de
    material o NotebookLM gera agora pra esse assunto (`generate report` aceita
