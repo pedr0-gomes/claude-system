@@ -1,6 +1,6 @@
 # CONTEXT.md — .claude/ (sistema de orquestração)
 
-Última atualização: 2026-06-20
+Última atualização: 2026-06-28
 
 ## O que é este diretório
 
