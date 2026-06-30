@@ -104,7 +104,9 @@ recontagem-grelhada peça-a-peça → nota consolidada
    (n=2: codebase + externa); a nota quer viver fora da ferramenta.*
 
 5. **Consolidação** — o Claude **registra as definições tight nas palavras de
-   Pedro** num arquivo local (`.md`), uma por peça, cada uma já grelhada contra
+   Pedro** num arquivo `.md` **privado** — Notion, ou caminho `gitignore`d no
+   repo; **nunca versionado em repo público** (ver CONTEXT.md: só código e post
+   final vão a público) — uma por peça, cada uma já grelhada contra
    as fontes. Essa é a nota-sombra. **Forma segue o material como orientação,
    não obrigação:** prosa é o default barato; se o aprendido for fortemente
    **relacional** (hierarquia, modelo de domínio), externalize em Excalidraw
@@ -131,7 +133,8 @@ recontagem firme, não a leitura completa.
 
 ## Saída — a nota-sombra
 
-Quando fechar, a sombra inspecionável é o `.md` consolidado: as definições
+Quando fechar, a sombra inspecionável é o `.md` consolidado **privado** (Notion
+ou caminho `gitignore`d — nunca em repo público): as definições
 tight nas palavras de Pedro, uma por peça, ancoradas nas fontes. Borda
 **mapa→Expor**: a condição load-bearing é o Claude conseguir extrair essa nota
 (e, se o material veio do NotebookLM, recuperá-lo via `notebooklm history` /
