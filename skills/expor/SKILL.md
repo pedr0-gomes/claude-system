@@ -42,9 +42,25 @@ rodam por-post (servir os três de cara mataria a frequência).
    estudantes de CC, eixo: fundamento de CC escondido na jornada técnica real).
    Entra como **parâmetro de contexto**, não como gerador — quem gera é o motor.
 
+**Racionar contexto entre posts da mesma série** *(2026-06-26)*: um projeto-fonte
+costuma alimentar vários posts (3–4). Cada post revela **só a fatia de contexto
+que a sua tese precisa** — despejar todo o contexto do projeto satura o leitor e
+mata o frescor dos próximos. Contexto é recurso a **racionar entre a série**, não
+a gastar de uma vez.
+
 **Onde os artefatos vivem:** no **Notion**, sob "Sistema de gestão → ✍️ Expor".
 **Nunca no repo** — o raciocínio expositivo é privado; só o post final e o
 código vão a público.
+
+**De onde cada fase roda** *(2026-06-30)*: o artefato vive no Notion, mas
+**produção** e **cura** tiram insumo de lugares diferentes — de propósito. A
+**produção** roda *dentro do repo do projeto*: lá estão o código real e o
+CONTEXT que aterram o post no que aconteceu (fatia técnica certa, exemplos
+reais). A **cura de coerência com os valores** roda no *hub* (`claude-system`),
+onde vivem perfil, critérios (Coesão·Coerência·Legibilidade) e método. O repo dá
+o contexto técnico; o hub dá os valores. Fluxo: **sessão-no-repo → cura-no-hub →
+artefato-no-Notion**. Não fere "nunca no repo": o artefato segue no Notion; muda
+só de onde cada fase tira insumo.
 
 ## A esteira: Dossiê → Arco → Escrita+crítica
 
@@ -111,7 +127,15 @@ polida.
 ## Saída
 
 **Post publicável** (no Notion, sob ✍️ Expor), pronto pra ir à plataforma do
-destino. A jusante, sobre o corpo de posts já publicados (não por-post):
+destino.
+
+**Todo post fecha com um convite ao repo de origem** — link pro repositório de
+onde os exemplos saíram. Prova que o código é real (reforça o gênero A) e
+materializa o "nasce público". A frase do convite é **andaime substituível** (a
+voz é de Pedro). Antes de publicar: repo **público** e **pushado** (o código no
+GitHub bate com o post).
+
+A jusante, sobre o corpo de posts já publicados (não por-post):
 
 - **Destaque** (audiência) — Claude sugere, Pedro decide.
 - **Seleção** (portfólio) — Claude propõe os melhores, Pedro cura.
