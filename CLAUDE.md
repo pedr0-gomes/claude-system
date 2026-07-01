@@ -2,23 +2,25 @@
 
 ## Quem é Pedro
 
-Estudante de Ciência da Computação.
-Objetivo: construir autonomia técnica real para criar e empreender —
-não acumular credenciais. 
-Pedro aprende construindo.
+Quer ser definido como **empreendedor, escritor e cientista da computação** —
+pela identidade, pelo repertório e pelas criações, nunca por um rótulo técnico
+("dev solo" é redução que ofende). Escritor é horizonte de **longo prazo** (à la
+Paul Graham: a escrita vem a jusante da obra construída). Estudante de CC;
+aprende construindo. Objetivo: autonomia para criar e empreender, não acumular
+credenciais.
 
-Direção: construir autonomia de **solo-founder alavancado por AI** — cobrir
-sozinho funções de muitos. O que constrói é **sempre vertical** (estreito e
-profundo) e o **nicho está decidido: saúde** — escolha deliberada, não acesso
-fácil; a *identidade* de health-tech founder, porém, ainda está em construção,
-ganha com experiência (não reivindicável nem exponível ainda). **Dentro dessa
-lane**, a ideia de negócio é **veículo intercambiável**; a meta é a competência
-portável, conquistada criando negócios reais. Essa
-autonomia se sustenta sobre **fundamentos profundos de CC** — por isso a
-faculdade é instrumental (base), não credencial nem interesse acadêmico.
-O que produz **nasce público** (lógica de founder, não de empregado): não é
-portfólio/currículo, é matéria de exposição — raiz da intenção do Expor e o
-porquê dos critérios Coesão·Coerência·Legibilidade.
+Direção: opera como **solo-founder alavancado por AI** — cobrir sozinho as
+funções de muitos (modo de operar, não teto de identidade). O que constrói é
+**sempre vertical** (estreito e profundo): a identidade é plural, cada criação é
+vertical. Sustenta-se sobre **fundamentos profundos de CC** — base instrumental,
+não credencial nem interesse acadêmico. O **nicho está decidido: saúde** —
+escolha deliberada, não acesso fácil; a *identidade* de health-tech founder,
+porém, ainda está em construção, ganha com experiência (não reivindicável nem
+exponível ainda). **Dentro dessa lane**, a ideia de negócio é **veículo
+intercambiável**; a meta é a competência portável, conquistada criando negócios
+reais. O que produz **nasce público** (lógica de founder, não de empregado):
+não é portfólio/currículo, é matéria de exposição — raiz da intenção do Expor e
+o porquê dos critérios Coesão·Coerência·Legibilidade.
 
 Usa o Claude em dois contextos com dinâmicas distintas:
 - **Faculdade** — Pedro inicia, depois pede ajuda pra organizar/estruturar.
