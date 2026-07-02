@@ -84,6 +84,18 @@ recontagem-grelhada peça-a-peça → nota consolidada
    externas; situado, com artefatos densos já no projeto, é setup
    desnecessário.
 
+   **Refino — bitola dupla quando a tese tem uma alegação geral** *(n=2,
+   health-plan-authorization, abstrata-vs-interface)*: "dispensar o NotebookLM"
+   vale quando a tese é **sobre o próprio código** (procedural→OO: "meu modelo
+   virou OO"). Mas quando a tese carrega uma **alegação geral** — sobre *por que
+   a ferramenta existe*, não só sobre este sistema ("classe abstrata não é pra
+   reuso") — o código sozinho não é bitola: ele mostra *um caso*, não a regra.
+   Aí **pareie as duas bitolas**: o código valida a tese sobre o próprio sistema
+   (`Segmentacao` é abstrata *certa*?) e uma **fonte externa** (via NotebookLM)
+   valida a alegação geral — senão o Claude vira a autoridade do tema e alucina
+   correção (quebra a régua 2). Confirmado: código do projeto + APOSD/Bloch via
+   NotebookLM, grelhados em paralelo.
+
 2. **Diagnóstico do formato** — **grelhe** Pedro pra decidir qual *tipo* de
    material o NotebookLM gera agora pra esse assunto (`generate report` aceita
    `briefing-doc`/`study-guide`/`blog-post`/`custom`, e todo `generate` aceita
